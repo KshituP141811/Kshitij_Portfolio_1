@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projects — Kshitij Pillewan</title>
+    <meta name="description" content="Project portfolio — Kshitij Pillewan. Case studies, links, and technical details.">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar" role="banner">
+    <div class="container nav-wrapper">
+        <a href="index.html" class="logo" aria-label="Homepage">Kshitij Pillewan</a>
+        <nav role="navigation" aria-label="Primary">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="projects-hero">
+        <div class="container">
+            <h1>Projects</h1>
+            <p class="lead">Selected web, security and infrastructure projects — each entry contains the problem, my approach, and links to code or a live demo where possible.</p>
+        </div>
+    </section>
+
+    <section class="projects-list-section">
+        <div class="container">
+            <div class="projects-controls">
+                <div class="filter-row">
+                    <label for="filter-tech">Filter by:</label>
+                    <select id="filter-tech" aria-label="Filter projects by technology">
+                        <option value="all">All</option>
+                        <option value="web">Web</option>
+                        <option value="security">Security</option>
+                        <option value="infra">Infrastructure</option>
+                    </select>
+                </div>
+
+                <div class="search-row">
+                    <label for="projects-search" class="sr-only">Search projects</label>
+                    <input id="projects-search" type="search" placeholder="Search projects..." aria-label="Search projects">
+                </div>
+            </div>
+
+            <div id="projects-grid" class="projects-grid" aria-live="polite">
+                <!-- Project cards will be rendered here by js/projects.js -->
+                <noscript>
+                    <div class="project-card">
+                        <img src="assets/images/project1.png" alt="Project screenshot">
+                        <div class="project-content">
+                            <h3>Example Project</h3>
+                            <p>Static fallback — enable JavaScript to load the full project list from <code>data/projects.json</code>.</p>
+                            <p class="project-meta"><strong>Tech:</strong> Web · Node.js</p>
+                            <p class="project-links">
+                                <a href="#" class="btn small-btn">Details</a>
+                                <a href="#" class="btn outline-btn">Source</a>
+                            </p>
+                        </div>
+                    </div>
+                </noscript>
+            </div>
+
+            <!-- Pagination (optional; implemented by js if dataset large) -->
+            <nav id="projects-pagination" class="pagination" aria-label="Projects pagination" hidden>
+                <button id="prev-page" class="page-btn" aria-label="Previous page" disabled>Prev</button>
+                <span id="page-info" aria-live="polite">Page 1</span>
+                <button id="next-page" class="page-btn" aria-label="Next page">Next</button>
+            </nav>
+        </div>
+    </section>
+</main>
+
+<footer class="footer" role="contentinfo">
+    <div class="container footer-grid">
+        <p>© 2025 Kshitij Pillewan. All rights reserved.</p>
+        <p>
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+            <span aria-hidden="true"> · </span>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+    </div>
+</footer>
+
+<!-- Page scripts -->
+<script src="js/projects.js" defer></script>
+<script>
+/*
+ Minimal inline behaviour: if js/projects.js is missing, show a simple message.
+ This keeps the page graceful without overstepping — primary logic belongs in js/projects.js.
+*/
+window.addEventListener('error', (e) => {
+    if (e.filename && e.filename.endsWith('projects.js')) {
+        const grid = document.getElementById('projects-grid');
+        if (grid && grid.innerHTML.trim() === '') {
+            grid.innerHTML = '<div class="empty-state"><p>Unable to load projects. Ensure <code>data/projects.json</code> and <code>js/projects.js</code> are present.</p></div>';
+        }
+    }
+});
+</script>
+</body>
+</html>

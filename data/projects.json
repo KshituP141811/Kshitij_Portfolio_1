@@ -1,0 +1,90 @@
+[
+  {
+    "id": "p1",
+    "title": "Personal Portfolio (Static)",
+    "description": "A fast, accessible, and responsive static portfolio built with semantic HTML, vanilla CSS, and minimal JavaScript. Features optimized images, SEO meta, and a lightweight build process.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "tags": ["web"],
+    "image": "assets/images/project1.png",
+    "imageAlt": "Screenshot of personal portfolio",
+    "detailsUrl": "projects.html#p1",
+    "sourceUrl": "https://github.com/yourusername/portfolio-static"
+  },
+  {
+    "id": "p2",
+    "title": "Task Manager API",
+    "description": "RESTful task management API with Node.js and Express, JWT auth, input validation, and Postgres persistence. Includes Dockerfile and CI workflow for linting/tests.",
+    "tech": ["Node.js", "Express", "Postgres", "Docker"],
+    "tags": ["web", "infra"],
+    "image": "assets/images/project2.png",
+    "imageAlt": "Task Manager API diagram",
+    "detailsUrl": "projects.html#p2",
+    "sourceUrl": "https://github.com/yourusername/task-manager-api"
+  },
+  {
+    "id": "p3",
+    "title": "Web App Penetration Test — Case Study",
+    "description": "Full penetration test engagement for a single-page web app: reconnaissance, authenticated testing, XSS and SSRF findings, proof-of-concept exploit code, and remediation roadmap.",
+    "tech": ["Burp Suite", "JavaScript", "Nmap"],
+    "tags": ["security"],
+    "image": "assets/images/project3.png",
+    "imageAlt": "Pentest report cover",
+    "detailsUrl": "projects.html#p3",
+    "sourceUrl": "https://github.com/yourusername/pentest-case-study"
+  },
+  {
+    "id": "p4",
+    "title": "Secure CI/CD Pipeline",
+    "description": "Configured GitHub Actions CI with container scanning, dependency audit, and deployment steps to a staging environment. Hardened secrets handling and rollback strategy.",
+    "tech": ["GitHub Actions", "Docker", "Trivy"],
+    "tags": ["infra", "security"],
+    "image": "assets/images/project4.png",
+    "imageAlt": "CI/CD pipeline visualization",
+    "detailsUrl": "projects.html#p4",
+    "sourceUrl": "https://github.com/yourusername/secure-ci-cd"
+  },
+  {
+    "id": "p5",
+    "title": "IoT Network Segmentation Lab",
+    "description": "Lab project demonstrating network segmentation for IoT devices using virtual routers and VLANs. Includes Packet Tracer topology, firewall rules, and monitoring setup.",
+    "tech": ["Cisco Packet Tracer", "Networking"],
+    "tags": ["infra"],
+    "image": "assets/images/project5.png",
+    "imageAlt": "Network topology diagram",
+    "detailsUrl": "projects.html#p5",
+    "sourceUrl": "https://github.com/yourusername/iot-segmentation-lab"
+  },
+  {
+    "id": "p6",
+    "title": "Android Bug Bounty — App Analysis",
+    "description": "Static and dynamic analysis of an Android app to find insecure storage, improper session handling, and insecure communication. Includes PoCs and responsible disclosure timeline.",
+    "tech": ["Android", "MobSF", "Frida"],
+    "tags": ["security", "mobile"],
+    "image": "assets/images/project6.png",
+    "imageAlt": "Android app analysis screenshot",
+    "detailsUrl": "projects.html#p6",
+    "sourceUrl": "https://github.com/yourusername/android-bugbounty"
+  },
+  {
+    "id": "p7",
+    "title": "Realtime Chat (WebSocket)",
+    "description": "Lightweight realtime chat app using WebSocket (ws) with rooms, presence, and message history stored in Redis. Focus on performance and minimal latency.",
+    "tech": ["Node.js", "WebSocket", "Redis"],
+    "tags": ["web", "infra"],
+    "image": "assets/images/project7.png",
+    "imageAlt": "Realtime chat UI",
+    "detailsUrl": "projects.html#p7",
+    "sourceUrl": "https://github.com/yourusername/realtime-chat-ws"
+  },
+  {
+    "id": "p8",
+    "title": "Automated Recon Toolkit",
+    "description": "Small collection of Bash and Python scripts to automate reconnaissance: subdomain enumeration, port scanning, and basic vulnerability checks. Designed for learning and lab use.",
+    "tech": ["Bash", "Python", "Nmap"],
+    "tags": ["security", "tools"],
+    "image": "assets/images/project8.png",
+    "imageAlt": "Recon toolkit terminal output",
+    "detailsUrl": "projects.html#p8",
+    "sourceUrl": "https://github.com/yourusername/recon-toolkit"
+  }
+]

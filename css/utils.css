@@ -1,0 +1,178 @@
+/* -----------------------------------------
+   GENERAL RESET (lightweight)
+------------------------------------------*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+/* Remove outlines for mouse users but keep for keyboard */
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* -----------------------------------------
+   FLEX UTILITIES
+------------------------------------------*/
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.gap-10 { gap: 10px; }
+.gap-20 { gap: 20px; }
+.gap-30 { gap: 30px; }
+
+/* -----------------------------------------
+   GRID UTILITIES
+------------------------------------------*/
+.grid {
+    display: grid;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.grid-auto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+/* -----------------------------------------
+   SPACING UTILITIES
+------------------------------------------*/
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mt-40 { margin-top: 40px; }
+
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
+.mb-40 { margin-bottom: 40px; }
+
+.pt-10 { padding-top: 10px; }
+.pt-20 { padding-top: 20px; }
+.pt-30 { padding-top: 30px; }
+.pt-40 { padding-top: 40px; }
+
+.pb-10 { padding-bottom: 10px; }
+.pb-20 { padding-bottom: 20px; }
+.pb-30 { padding-bottom: 30px; }
+.pb-40 { padding-bottom: 40px; }
+
+/* -----------------------------------------
+   TEXT UTILITIES
+------------------------------------------*/
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left  { text-align: left; }
+
+.text-bold { font-weight: 700; }
+.text-medium { font-weight: 500; }
+.text-light { font-weight: 300; }
+
+.text-small { font-size: 0.85rem; }
+.text-large { font-size: 1.3rem; }
+
+/* -----------------------------------------
+   DISPLAY UTILITIES
+------------------------------------------*/
+.hidden { display: none !important; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+
+/* -----------------------------------------
+   UTILITY COLORS (use sparingly)
+------------------------------------------*/
+.bg-light { background: var(--light); }
+.bg-white { background: #ffffff; }
+
+.text-primary { color: var(--primary); }
+.text-muted { color: var(--subtext); }
+
+/* -----------------------------------------
+   BORDERS & RADIUS
+------------------------------------------*/
+.rounded { border-radius: var(--radius); }
+.rounded-full { border-radius: 999px; }
+
+.border { border: 1px solid var(--border); }
+.border-primary { border: 1px solid var(--primary); }
+
+/* -----------------------------------------
+   SHADOW UTILITIES
+------------------------------------------*/
+.shadow-sm {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.shadow-md {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.shadow-lg {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+/* -----------------------------------------
+   WIDTH UTILITIES
+------------------------------------------*/
+.w-100 { width: 100%; }
+.w-50  { width: 50%; }
+.max-w-600 { max-width: 600px; }
+
+/* -----------------------------------------
+   RESPONSIVE
+------------------------------------------*/
+@media (max-width: 768px) {
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .text-large {
+        font-size: 1.15rem;
+    }
+}

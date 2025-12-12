@@ -1,0 +1,30 @@
+portfolio/
+├─ index.html
+├─ about.html
+├─ projects.html
+├─ contact.html
+│
+├─ css/
+│  ├─ main.css
+│  └─ utils.css              <-- optional (variables, resets, helpers)
+│
+├─ js/
+│  ├─ main.js
+│  ├─ projects.js            <-- fetch from projects.json & render cards
+│  └─ form.js                <-- contact form handling
+│
+├─ assets/
+│  ├─ images/
+│  │  ├─ profile.jpg
+│  │  ├─ hero.jpg
+│  │  └─ project1.png
+│  ├─ icons/
+│  └─ fonts/
+│
+├─ data/
+│  └─ projects.json          <-- all project details centrally stored
+│
+├─ docs/
+│  └─ resume.pdf             <-- your CV to download
+│
+└─ dist/                     <-- final optimized build (optional)
